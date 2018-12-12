@@ -1,0 +1,35 @@
+$page-title-height: 40px;
+.ivy-page-title {
+  width: 100%;
+  height: $page-title-height;
+  background: linear-gradient(#fff, #f8f9fa);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  line-height: $page-title-height;
+  page-size: 14px;
+  padding: 0 15px 0 15px;
+  .title-text {
+    color: #999;
+  }
+  .refresh-icon {
+    width: $page-title-height;
+    height: $page-title-height;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    .iconfont {
+      font-size: 20px;
+      color: #ccc;
+    }
+    &:hover {
+      .iconfont {
+        color: #333;
+      }
+    }
+  }
+  .title-btn{
+    margin-right: 15px;
+    float: right;
+    position: relative;
+    top:4px;
+  }
+}

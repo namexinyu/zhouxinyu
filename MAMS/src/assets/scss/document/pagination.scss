@@ -1,0 +1,35 @@
+.ivy-pagination {
+    float: left;
+    width: 100%;
+    background: #fff;
+    .page-item {
+        cursor: pointer;
+        &.active {
+            .page-link {
+                background: #17a2b8;
+                border-color: #17a2b8;
+            }
+        }
+    }
+    .page-link {
+        color: #333;
+    }
+    .pagination {
+        float: left;
+    }
+    .border-none {
+        border: none;
+    }
+    .jump-page-input {
+        width: 70px;
+        margin-right: 1px;
+    }
+    .border-sep{
+        border-width: 0 0 0 1px;
+        background: none;
+        cursor: default;
+        &:hover{
+            background: none;
+        }
+    }
+}

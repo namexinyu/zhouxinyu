@@ -1,0 +1,50 @@
+.header-user-info{
+  .user-info{
+    width: 320px;
+    height: 200px;
+    background-color: #eee;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.15);
+    position: absolute;
+    left: -50px;
+    top: 64px;
+    z-index: 10;
+    line-height: 1.5;
+    padding: 10px 0;
+    display: none;
+    h6{
+      color: #5d5d5d;
+      border-bottom: 1px solid #aaa;
+      padding: 5px 10px;
+      font-weight: 700;
+    }
+    ul{
+      margin: 0;
+      padding: 20px 10px;
+      margin-left: 15px;
+      font-size: 13px;
+      li{
+        list-style: disc;
+        padding: 5px 0;
+        font-weight: 600;
+      }
+    }
+  }
+  .user-name{
+    display: inline-block;
+    height: 64px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    i{
+      margin-right: 7px;
+    }
+  }
+  &:hover .user-info{
+    display: block;
+  }
+  cursor: pointer;
+}
+.news{
+  cursor: pointer;
+  color: #fff;
+}

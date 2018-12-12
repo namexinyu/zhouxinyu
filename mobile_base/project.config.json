@@ -1,0 +1,15 @@
+{
+  "name": "h5",
+  "basename": "/h5",
+  "port": 9500,
+  "mode": {
+    "dev": "development",
+    "prod": "production"
+  },
+  "title": {
+    "development": "周薪薪h5-开发",
+    "production": "周薪薪h5"
+  },
+  "proxy": "./proxy.config.js",
+  "mock": "./mock.config.js"
+}

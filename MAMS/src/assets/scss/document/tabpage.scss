@@ -1,0 +1,61 @@
+$tab-height: 30px;
+.ivy-tabpage {
+    width: 100%;
+    background: #ccc;
+    display: flex;
+    flex-direction: row;
+    .tab-group {
+        flex: 1;
+    }
+    .tab-operate {
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        background: #dfdfdf;
+        position: relative;
+        .operate-item {
+            position: absolute;
+            width: 140px;
+            right: 0;
+            top: $tab-height+4px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+            z-index: 2;
+            .list-group-item {
+                border-radius: 0;
+            }
+        }
+    }
+    .tab-item {
+        min-width: 100px;
+        max-width: 240px;
+        line-height: $tab-height;
+        height: 0;
+        text-align: center;
+        padding: 0 5px 0 10px;
+        font-size: 14px;
+        display: inline-block;
+        border-bottom: $tab-height solid #e6e6e6;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        cursor: default;
+        color: #999;
+        margin-top: 4px;
+        &.active {
+            border-bottom: $tab-height solid #fff;
+            color: #333;
+        }
+    }
+    .tab-text {
+        padding-right: 10px;
+        display: inline-block;
+    }
+    .icon-close-tab {
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+    }
+    .more-operate {
+        display: inline-block;
+        margin-top: 4px;
+    }
+}

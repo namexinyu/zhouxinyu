@@ -1,0 +1,60 @@
+.ivy-page-title{
+  background-color: white;
+  width: 100%;
+  padding: 10px 20px;
+  height: 40px;
+  .ivy-title{
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .ivy-title:before{
+    position: relative;
+    content: '';
+    width: 0;
+    top:1px;
+    height: 18px;
+    margin-right: 8px;
+    border-left: 4px solid @primary-color;
+  }
+  .refresh-icon{
+    float: right;
+    width: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    .iconfont {
+      font-size: 20px;
+      color: #ccc;
+    }
+    &:hover {
+      .iconfont {
+        color: #333;
+      }
+    }
+  }
+  .title-btn{
+    margin-right: 12px;
+    float: right;
+    position: relative;
+    height: 22px;
+  }
+}
+.ivy-page-chunk{
+  margin:15px 15px;
+  padding: 15px 15px;
+  background-color: white;
+  box-shadow: 0 0 2px 2px #eee;
+}
+.ant-table-wrapper{
+  .ant-spin-nested-loading{
+    .ant-table-content{
+      .ant-table-body{
+        .listpadding{
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+@import "../theme/antd-theme";
+
+.recruitment-info-view {
+  .match-input {
+    .ant-input-group-addon {
+      background-color: @primary-color;
+      color: white;
+      padding: 0 6px;
+      letter-spacing: 1px;
+      font-size: 14px;
+      border-width: 1px 1px 1px 0;
+      border-color: @primary-color;
+    }
+  }
+  .e-area {
+    .ant-input-group-addon {
+      margin: 0;
+      background-color: @primary-color;
+      color: white;
+    }
+    //.normal-area-div {
+    //  position: absolute;
+    //  z-index: 3;
+    //  left: 0;
+    //  top: 35px;
+    //  width: 100%;
+    //  height: auto;
+    //  display: flex;
+    //  flex-flow: row wrap;
+    //  justify-content: space-around;
+    //  background-color: white;
+    //  border: 1px solid #dddddd;
+    //  padding: 10px 0;
+    //  > div {
+    //    flex: 1;
+    //    width: 60px;
+    //    max-width: 60px;
+    //    height: 28px;
+    //    line-height: 28px;
+    //    text-align: center;
+    //    background-color: @primary-color;
+    //    border-radius: 4px;
+    //    color: white;
+    //  }
+    //}
+  }
+
+  .recruit-table {
+    tr.is-recommend {
+      background-color: #FFF176 !important;;
+    }
+    tr.not-recommend {
+      background-color: #4dd0e1 !important;;
+    }
+    tr.not-recruiting {
+      color: black;
+      background-color: #fff !important;
+    }
+    tr.is-recommend:hover {
+      background-color: #FDD835 !important;
+    }
+    tr.not-recommend:hover {
+      background-color: #00acc1 !important;
+    }
+    tr.not-recruiting:hover {
+      background: #ecf6fd !important;
+    }
+    tr:hover {
+      > td {
+        background-color: transparent;
+      }
+    }
+    .td-width-144 {
+      width: 144px;
+    }
+    .no-wrap {
+      white-space: nowrap;
+    }
+  }
+
+  .is-recommend-icon {
+    color: #FF6633;
+  }
+  .not-recommend-icon {
+    display: none;
+  }
+  .not-recruiting-icon {
+    display: none;
+  }
+  .recruit-name-td {
+    position: relative;
+    .recruit-td-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    .iconfont {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  .recommend-icon {
+    position: absolute;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+  }
+
+  .ant-affix {
+    bottom: 0;
+    overflow: auto;
+  }
+}

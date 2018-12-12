@@ -1,0 +1,73 @@
+//主色
+$color-primary: #5077aa;
+$color-primary-light: #edf1f6;
+$color-primary-red: #e54c57;
+$color-minor-red: #ee7f79;
+$color-primary-blue: #5077aa;
+$color-minor-blue: #78aeea;
+//辅助色
+$color-main-bg: #f5f5f5;
+$color-main-bg-dark: #f0f0f0;
+$color-border-default: #e1e1e1;
+$color-border-light: #eaeaea;
+//功能色系
+$brand-primary: $color-primary;
+$brand-primary-light: $color-primary-light;
+$brand-success: #0b8c1f;
+$brand-default: #a6ebff;
+$brand-info: #009ddb;
+$brand-warning: #f07415;
+$brand-danger: #db525a;
+$brand-link: #036eb8;
+$brand-minor: #eeeeee;
+//字体色系
+$color-font-3: #333;
+$color-font-5: #555;
+$color-font-6: #666;
+$color-font-8: #888;
+$color-font-9: #999;
+$color-font-c: #ccc;
+$color-font-placeholder: #b4b5b5;
+$color-font-link: #036eb8;
+$color-font-err: #e9545d;
+$color-font-gray: #c1c1c1;
+$color-icon: #ed7f7a;
+//边距系统
+$padding-s: 10px;
+$padding-m: 20px;
+$padding-l: 30px;
+$padding-xl: 40px;
+//字体大小
+$map-font-size: (xxs: 22px, xs: 24px, s: 26px, m: 28px, l:30px, xl:32px, xxl: 36px);
+//z-index使用
+$z-index-bg:1;
+$z-index-content: 10;
+$z-index-framework: 20;
+$z-index-os: 30;
+$z-index-modal: 40;
+//dialog
+$dialog-bg-color:rgb(243, 245, 245);
+
+/* alert,confirm bg color*/
+
+$toast-body-width: 500px;
+$toast-body-height: 100px;
+$dialog-body-width: 500px;
+$dialog-radius: 8px;
+
+/*header*/
+
+$header-height: 88px;
+
+/*static img path*/
+
+$user-avatar: '/bd-assistant/static/149032348521574.png';
+$doctor-avatar: '/bd-assistant/static/149032348521574.png';
+$no-doc: '/bd-assistant/static/no_doc.png';
+$no-order: '/bd-assistant/static/no_order.png';
+$icon-arrow: '/bd-assistant/static/arrow.png';
+// $qrcode: '/bd-assistant/static/qrcode.png';
+
+/* avatar */
+
+$avatar-wh: 150px;

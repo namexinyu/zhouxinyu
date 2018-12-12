@@ -1,0 +1,70 @@
+.ivy-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.ivy-main {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    padding-top: $navbar-brand-height + $navbar-padding-y * 2;
+    display: flex;
+    z-index: 1;
+}
+
+.ivy-scroll-box {
+    // height: 100%;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // position: relative;
+    // background-color: #F6F6F6;
+}
+
+.ivy-sidenav {
+    max-width: 320px;
+    min-width: 200px;
+}
+
+.ivy-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ivy-tab-box {
+    min-height: 30px;
+}
+
+.ivy-page-box {
+    flex: 1;
+    position: relative;
+}
+
+.ivy-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 50px;
+}
+.ivy-scroll-y{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ivy-h-100{
+    height: 100px;
+}
+.ivy-h-150{
+    height: 150px;
+}
+.ivy-h-200{
+    height: 200px;
+}
+.ivy-h-250{
+    height: 250px;
+}

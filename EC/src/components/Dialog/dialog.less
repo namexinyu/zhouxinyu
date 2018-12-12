@@ -1,0 +1,159 @@
+
+.ivy-dialog {
+  .ivy-dialog-title {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-weight: bold;
+  }
+  .ivy-dialog-content {
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+    color: #999;
+    padding: 15px;
+    min-height: 100px;
+  }
+  .ivy-dialog-btn {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    .ivy-dialog-btn-cancel,
+    .ivy-dialog-btn-ok {
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      line-height: 60px;
+      float: left;
+      font-size: 20px;
+      border-radius: 0;
+      padding: 0;
+      letter-spacing: 5px;
+      background: #fff;
+      &:hover {
+        background: #f6f6f6;
+        line-height: 62px;
+      }
+    }
+
+    .ivy-dialog-btn-ok {
+      color: #666;
+    }
+    .ivy-dialog-btn-cancel {
+      color: #aaa;
+      border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+    &.alert {
+      padding: 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      .ivy-dialog-btn-ok {
+        width: 100%;
+      }
+    }
+  }
+  .mask {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .ivy-dialog-box {
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin-top: -170px;
+    margin-left: -250px;
+    z-index: 10;
+    &.alert,
+    &.confirm {
+      background: #fff;
+      padding: 0;
+      border: none;
+      margin-bottom: 0;
+    }
+    &.toast {
+      background: none;
+      margin-top: -40px;
+      text-align: center;
+      .ivy-dialog-content {
+        display: inline-block;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, .7);
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        min-height: inherit;
+        width: auto;
+        padding: 0 30px 0 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+    }
+    &.spinner {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -80px;
+      margin-left: -80px;
+      .ivy-dialog-spinner {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &.success {
+      .ivy-dialog-title {
+        border-color: #28a745;
+        color: #28a745;
+      }
+      .ivy-dialog-btn-ok {
+        color: #28a745;
+      }
+    }
+    &.warning {
+      .ivy-dialog-title {
+        border-color: #fd7e14;
+        color: #fd7e14;
+      }
+      .ivy-dialog-btn-ok {
+        color: #fd7e14;
+      }
+    }
+    &.danger {
+      .ivy-dialog-title {
+        border-color: #dc3545;
+        color: #dc3545;
+      }
+      .ivy-dialog-btn-ok {
+        color: #dc3545;
+      }
+    }
+    &.info {
+      .ivy-dialog-title {
+        border-color: #17a2b8;
+        color: #17a2b8;
+      }
+      .ivy-dialog-btn-ok {
+        color: #17a2b8;
+      }
+    }
+  }
+}

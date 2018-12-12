@@ -1,0 +1,62 @@
+.ivy-header {
+    .user-info,
+    .operate {
+        float: left;
+        color: #fff;
+        span {
+            display: inline-block;
+        }
+    }
+    .system-info,
+    .alarm-info,
+    .shutdown {
+        margin-left: 20px;
+        position: relative;
+    }
+    .system-info,
+    .alarm-info {
+        margin-right: 20px;
+        .badge {
+            position: absolute;
+            top: -5px;
+            right: -20px;
+        }
+    }
+    .iconfont {
+        font-size: 20px;
+    }
+    .level-tip{
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.ivy-fixed-tip {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px; // 提醒暂时隐藏
+    height: 50px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 8px 0 0 0;
+    .item {
+        width: 100px;
+        line-height: 50px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background: rgba(0, 0, 0, .15);
+        }
+        .badge {
+            position: relative;
+            top: -10px;
+        }
+    }
+}
+
+.bg-red-dark {
+    background: #a00 !important;
+}

@@ -1,0 +1,79 @@
+@import "./utilities/util";
+@import "./component/page-title";
+
+
+.message-notify {
+  &.ant-notification-notice {
+      position: absolute;
+      min-width: 335px;
+  }
+
+  .ant-notification-notice-close {
+      display: none;
+  }
+
+  .ant-notification-notice-message {
+      border-bottom: 1px solid #e9e9e9;
+      font-weight: 600;
+      width: 100%;
+      padding-bottom: 8px;
+  }
+
+  .message-notify__desc {
+      display: flex;
+    //   align-items: center;
+      max-height: 80px;
+      overflow: auto;
+      height: 80px;
+  }
+}
+.RecruitmentInfoPositionName{
+    position: relative;
+}
+.icon-corner-mark {
+    position: absolute;
+    border: solid transparent;
+    border-width: 0 10px 10px;
+    // border-left: 10px solid red;
+}
+
+.eventid-column {
+    position: relative;
+
+    .icon-corner-mark {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.EventWikiDetails {
+    overflow: hidden;
+    .ant-card.baike-card.ant-card-bordered{
+        .ant-card-head{
+            .ant-card-head-title{
+                font-size: 14px;
+            }
+        }
+        .ant-card-body{
+            img{
+                width: 100%;
+                height: 200px;
+            }
+            .card-cnt-wrap{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.input-number--normal {
+    &.ant-input-number {
+        &:hover {
+          .ant-input-number-handler-wrap {
+            display: none;
+          }
+        }
+      }
+}

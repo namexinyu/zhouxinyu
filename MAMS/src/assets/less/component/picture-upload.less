@@ -1,0 +1,61 @@
+@import "../theme/antd-theme";
+
+.avatar-uploader {
+  width: 150px;
+  height: 150px;
+  display: block;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  .avatar-uploader-trigger,
+  img,
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+img.size-sm{
+  width: 75px;
+  height: 75px;
+}
+img.size-xs{
+  width: 50px;
+  height: 50px;
+}
+.avatar-uploader.size-small {
+  width: 100px;
+  height: 100px;
+  .avatar-uploader-trigger,
+  img,
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.avatar-uploader.size-large{
+  width: 300px;
+  height: 300px;
+  .avatar-uploader-trigger,
+  img,
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.avatar-uploader-trigger {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #999;
+}
+.avatar-uploader.size-small.float-left{
+  .ant-upload-list.ant-upload-list-text{
+    .ant-upload-list-item.ant-upload-list-item-undefined{
+      display: none;
+    }
+  }
+}

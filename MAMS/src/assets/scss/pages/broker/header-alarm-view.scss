@@ -1,0 +1,17 @@
+.alarm-list-view {
+  .span-red-point {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ff2122;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+  }
+
+  .span-red-none {
+    display: none;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+  }
+}

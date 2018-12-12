@@ -1,0 +1,153 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "ASSET": "assets",
+              "COMPONENT": "components",
+              "ACTION": "actions",
+              "REDUCER": "reducers",
+              "STORE": "store",
+              "ROUTE": "routes",
+              "SERVICE": "services",
+              "UTIL": "utils",
+              "VIEW": "views",
+              "CONSTANT": "utils/constant",
+              "REQUEST":"utils/HttpRequest",
+              "SCSS": "assets/scss",
+              "IMAGE": "assets/images",
+              "CONFIG": "config"
+            }
+          }
+        ],
+        ["transform-define", {
+          "process.env.NODE_ENV": "test",
+          "__APP_ID__": "WD-test",
+          "__DEV__": false,
+          "__TEST__": true,
+          "__ALPHA__": false,
+          "__PROD__": false,
+          "__COMPONENT_DEVTOOLS__": false, // 是否使用组件形式的 Redux DevTools
+          "__WHY_DID_YOU_UPDATE__": false // 是否检测不必要的组件重渲染
+        }]
+      ]
+    },
+    "alpha": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "ASSET": "assets",
+              "COMPONENT": "components",
+              "ACTION": "actions",
+              "REDUCER": "reducers",
+              "STORE": "store",
+              "ROUTE": "routes",
+              "SERVICE": "services",
+              "UTIL": "utils",
+              "VIEW": "views",
+              "CONSTANT": "utils/constant",
+              "REQUEST":"utils/HttpRequest",
+              "SCSS": "assets/scss",
+              "IMAGE": "assets/images",
+              "CONFIG": "config"
+            }
+          }
+        ],
+        ["transform-define", {
+          "process.env.NODE_ENV": "test",
+          "__APP_ID__": "WD-alpha",
+          "__DEV__": false,
+          "__TEST__": false,
+          "__ALPHA__": true,
+          "__PROD__": false,
+          "__COMPONENT_DEVTOOLS__": false, // 是否使用组件形式的 Redux DevTools
+          "__WHY_DID_YOU_UPDATE__": false // 是否检测不必要的组件重渲染
+        }]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "ASSET": "assets",
+              "COMPONENT": "components",
+              "ACTION": "actions",
+              "REDUCER": "reducers",
+              "STORE": "store",
+              "ROUTE": "routes",
+              "SERVICE": "services",
+              "UTIL": "utils",
+              "VIEW": "views",
+              "CONSTANT": "utils/constant",
+              "REQUEST":"utils/HttpRequest",
+              "SCSS": "assets/scss",
+              "IMAGE": "assets/images",
+              "CONFIG": "config"
+            }
+          }
+        ],
+        ["transform-define", {
+          "process.env.NODE_ENV": "test",
+          "__APP_ID__": "WD",
+          "__DEV__": false,
+          "__TEST__": false,
+          "__ALPHA__": false,
+          "__PROD__": true,
+          "__COMPONENT_DEVTOOLS__": false, // 是否使用组件形式的 Redux DevTools
+          "__WHY_DID_YOU_UPDATE__": false // 是否检测不必要的组件重渲染
+        }]
+      ]
+    },
+    "development": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "ASSET": "assets",
+              "COMPONENT": "components",
+              "ACTION": "actions",
+              "REDUCER": "reducers",
+              "STORE": "store",
+              "ROUTE": "routes",
+              "SERVICE": "services",
+              "UTIL": "utils",
+              "VIEW": "views",
+              "CONSTANT": "utils/constant",
+              "REQUEST":"utils/HttpRequest",
+              "SCSS": "assets/scss",
+              "IMAGE": "assets/images",
+              "CONFIG": "config"
+            }
+          }
+        ],
+        ["transform-define", {
+          "process.env.NODE_ENV": "test",
+          "__APP_ID__": "WD-test",
+          "__DEV__": true,
+          "__TEST__": false,
+          "__ALPHA__": false,
+          "__PROD__": false,
+          "__COMPONENT_DEVTOOLS__": false, // 是否使用组件形式的 Redux DevTools
+          "__WHY_DID_YOU_UPDATE__": false // 是否检测不必要的组件重渲染
+        }]
+      ]
+    }
+  }
+}

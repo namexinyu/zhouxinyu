@@ -1,0 +1,220 @@
+.salary-pk-card {
+  background-color: #fff;
+  width: 750px;
+  margin: 0 auto;
+
+  .pk-brand-img {
+    margin: 0 auto;
+    height: 156px;
+  }
+
+  .salary-item-input {
+    width: 88px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+
+    &::-webkit-inner-spin-button, 
+    &::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .salary-item-text {
+    width: 110px;
+
+    span {
+      &:nth-child(2) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.salary-pk-card__bd--left {
+  position: relative;
+
+  .salary-pk-panel__hd {
+    padding-right: 40px;
+  }
+
+  h3 {
+    text-align: right;
+  }
+
+  .salary-pk-panel {
+    border-top-left-radius: 20px;
+  }
+}
+
+.salary-pk-card__bd--right {
+  position: relative;
+
+  .salary-pk-panel {
+    border-top-right-radius: 20px;
+  }
+
+  .salary-pk-panel__hd {
+    padding-left: 40px;
+
+    .salary-item-input {
+      width: 60px;
+    }
+  }
+
+  .pk-winner-img {
+    position: absolute;
+    bottom: 18px;
+    right: 8px;
+    z-index: 9;
+    display: none;
+    width: 70px;
+  }
+}
+
+.salary-pk-winner {
+  .pk-winner-img {
+    display: block;
+  }
+
+  .salary-pk-panel {
+    border: 1px solid #e84d31;
+
+    h3 {
+      color: #e84d31;
+    }
+  }
+
+  .salary-item-input-suffix {
+    color: #e84d31;
+  }
+
+  .salary-item-input {
+    color: #e84d31;
+    border-bottom-color: #e84d31!important;
+  }
+
+  .pk-winner-banner {
+    display: block;
+  }
+}
+
+.salary-pk-panel {
+  border: 1px solid #ddd;
+  position: relative;
+
+  h3 {
+    font-size: 19px;
+  }
+
+  .salary-pk-panel__hd {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .salary-item {
+    border-top: 1px solid #ddd;
+    height: 42px;
+  }
+
+  .salary-item-label {
+    border-right: 1px solid #ddd;
+    width: 70px;
+    text-align: center;
+  }
+
+  .salary-item-control {
+    padding-left: 30px;
+  }
+}
+
+.salary-pk-card__hd {
+  text-align: center;
+  padding: 0 100px;
+  
+  h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #32b16c;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 0;
+    font-weight: 400;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+.salary-pk-card__bd {
+  padding: 0 145px;
+  padding-bottom: 15px;
+}
+
+.salary-pk-card__ft {
+  padding: 8px 0;
+  background-color: #ffe912;
+  font-size: 16px;
+}
+
+.pk-winner-banner {
+  background-color: #e84d31;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+
+  span {
+    font-size: 18px;
+  }
+
+  .icon-winner-star {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAAhFBMVEUAAAD/6RL//wD/6RL/2w7/6RL/6RL/6xL/6xT/6RL/6RL/6BP/5xD//wD/6RL/6RL/6hL/6RL/6RH/6RL/6RH/6BL/6BH/6Bf/6RL/6RL/6RL/6RL/6RL/6hH/6RL/6BP/6hH/6hP/5wz/7RL/6RL/6RL/6RL/6RL/6RL/6hH/5A3/6RL7Z7w9AAAAK3RSTlMA+gLqB9LLMRnlXEIfBPTGtqehcWY3Kwvx1r6QiYR8enZrFA724N3YmDwT/ryOUQAAAOhJREFUKM99kleSwjAQREfRYW3jhAlLZiN9//uBBaZklaT320/SjKrJgXOKcoBYxXKeAXlM+ABQx4QWD9JwvqpG4RQWcoxswkINQxLKUzz5DAndSxClb75bMSi86Ificn2vrtW3qOCBrbOfmlODKFc6R/OsJOpYOF+kZgoRyv8kGQrtjVlPE7L1Pb8kizPzPW/zv57njaQ58msu7H1dstGusIPDxRGUK+RuFVxat2xP2G4xlYKTTQODSogfmad4XJjje7P8oI1wtIUED36nvy0P4yVbW+jHqkrrgAIqWyg22yXZlJ0+keEOWYxF8GpoWaAAAAAASUVORK5CYII=) 0 0 no-repeat;
+    background-size: 100%;
+  }
+}
+
+.salary-calculator-entry {
+  display: block;
+  width: 60px;
+  height: 70px;
+  background-color: #bd2637;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .anticon-close {
+    color: #bd2637;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    border-top-color: #fff;
+    border-width: 25px 0px 0 25px;
+    position: absolute;
+    right: 0;
+  }
+}

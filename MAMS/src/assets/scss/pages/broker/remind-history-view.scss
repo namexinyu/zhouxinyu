@@ -1,0 +1,31 @@
+.remind-history-view{
+  background-color: #F3F3F3;
+  height: 100%;
+  .page-body{
+    padding: 0 15px;
+  }
+  .content-chunk{
+    background-color: white;
+  }
+  .search-from{
+    padding: 20px 20px 10px;
+  }
+  .birth-table{
+    td{
+      padding-left: 15px;
+      border-right: none;
+      border-left: none;
+    }
+  }
+  .form-check{
+    font-size: 13px;
+  }
+  .remind-list{
+    height: 400px;
+  }
+  .remind-table{
+    tr>td{
+      vertical-align: middle;
+    }
+  }
+}

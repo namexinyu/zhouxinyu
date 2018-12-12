@@ -1,0 +1,123 @@
+@import "./utilities/util";
+@import "./component/page-title";
+@import "./pages/eventdetail";
+@import "./pages/baike";
+#app {
+  .ant-table-tbody > tr > td, .ant-table-thead > tr > th {
+    padding: 8px 6px;
+  }
+}
+
+body {
+  .ant-notification {
+    z-index: 999;
+  }
+}
+
+// 商务合作页面样式
+
+.icon-voice__wx {
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  background: url(//woda-app-public.oss-cn-shanghai.aliyuncs.com/web/h5/imgs/icon_wx_voice.png) no-repeat;
+  background-position: -200px -432px;
+  -webkit-background-size: 487px 462px;
+  background-size: 487px 462px; 
+
+  &.icon-voice__wx__playing {
+      background: url(//woda-app-public.oss-cn-shanghai.aliyuncs.com/web/h5/imgs/icon_wx_voice_playing.png)
+  }
+}
+
+
+.voice-item {
+  line-height: normal;
+  margin-left: 14px;
+
+  .bubble {
+    background: #fff;
+    border-color: #bfbfbf;
+    // -ms-flex-item-align: end;
+    // align-self: flex-end;
+
+    &::before {
+      left: -7px;
+      border-right: 7px solid #bfbfbf;
+    }
+
+    &::after {
+      left: -5px;
+      border-right: 6px solid #fff;
+    }
+  }
+
+  .voice-duration {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #bababa;
+    font-size: 14px;
+    margin-left: 8px;
+
+    &::after {
+      content: "\"";
+    }
+  }
+
+
+}
+
+.video-item {
+  line-height: normal;
+  margin-left: 10px;
+  margin-top: 8px;
+
+  .bubble {
+    padding: 0;
+    background: 0 0;
+    border: none;
+    font-size: 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  video {
+    border-radius: 4px;
+    background: #000;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+  }
+
+  .video-play-button {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+  }
+
+}
+.ant-spin-nested-loading {
+  .ant-spin-container {
+    .ant-table-content{
+      .ant-table-body{
+        table {
+          .ant-table-thead{
+            .UnallocatedInstrument {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+

@@ -1,0 +1,40 @@
+.schedule-table {
+  .schedule-table-cell {
+    padding: 0!important;
+
+    & > div {
+      height: 30px;
+    }
+  }
+
+  .schedule-status__work {
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .schedule-status__vacation {
+    background-color: #ff0000;
+    color: #fff;
+  }
+
+  .schedule-status__outlet {
+    background-color: #0f0;
+    color: #fff;
+  }
+
+  .schedule-status__rest {
+    background-color: #0096ff;
+    color: #fff;
+  }
+
+  .schedule-table-row {
+    &:nth-child(2n) {
+      background-color: #fff!important;
+    }
+
+    &:hover > td,
+    &.ant-table-row-hover > td {
+      background: #fff!important;
+    }
+  }
+}

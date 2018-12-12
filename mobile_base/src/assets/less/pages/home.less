@@ -1,0 +1,295 @@
+.home-wrapper {
+    .home-wrapper-fixed {
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        bottom: 0;
+        overflow: scroll;
+
+        .func-list {
+            padding: 0 10px;
+    
+            .card {
+                padding: 20px 10px;
+                display: flex;
+                background-color: #FFFFFF;
+            
+                .img {
+                    width: 35px;
+                    height: 35px;
+                    flex: 0 0 35px;
+                }
+            
+                .category {
+                    font-weight: bold;
+                    margin-left: 10px;
+                    position: relative;
+                }
+            
+                .attachinfo {
+                    color: #999999;
+                    margin-left: 10px;
+                }
+            
+                .card-status {
+                    padding: 2px 4px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                }
+                .card-status-0 {
+                    color: #F79E03;
+                    border: 1px solid #F79E03;
+                }
+                .card-status-1 {
+                    color: #999999;
+                    border: 1px solid #999999;
+                }
+                .card-status-2 {
+                    color: #33A866;
+                    border: 1px solid #33A866;
+                }
+                .card-status-3 {
+                    color: #E84E40;
+                    border: 1px solid #E84E40;
+                }
+            }
+        }
+    }
+    
+    .top-bar {
+        color: white;
+        padding: 15px 10px;
+        background-color:rgba(76,149,237,1);
+    
+        .phone-home-page {
+            height: 12px;
+            width: 12px;
+            margin-left: 10px;
+        }
+    }
+
+    .phone-modal {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        
+        .modal-content {
+            margin: 0 50px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            position: relative;
+            z-index: 1001;
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #FFFFFF;
+            
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .p1 {
+            background-color: #4C95ED;
+            text-align: center;
+            padding: 20px 0;
+            color: #FFFFFF;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        
+            P:nth-of-type(1) {
+                font-size: 10px;
+            }
+        
+            p:nth-of-type(2) {
+                font-size: 20px;
+                a {
+                    display: inline-block;
+                    outline: none;
+                    color:inherit;
+                    border-bottom: 1px solid #FFFFFF;
+                }
+            }
+        }
+
+        .p2 {
+            text-align: left;
+            padding: 10px 15px;
+        }
+    }
+    
+    .home-idcard-modal {
+        z-index: 9999;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .modal-content {
+            background-color: #FFFFFF;
+            position: relative;
+            z-index: 1001;
+    
+            .tips {
+                padding: 10px;
+                background-color: #D8E9F0;
+                color: #4C95ED;
+    
+                img {
+                    position: absolute;
+                    right: 10px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            .oper-btns {
+                text-align: center;
+                width: 100%;
+                padding: 20px 0;
+                .oper-btns-1 {
+                    width: 35%;
+                    display: inline-block;
+                }
+                .oper-btns-2 {
+                    width: 80%;
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    
+    #IDCard {
+        position: relative;
+        width: 100%;
+        > span {
+            width: 100%;
+            .ant-upload-select {
+                width: 100%;
+            }
+        }
+    
+        .default {
+            width: 100%;
+        }
+        .add {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 50%;
+            margin-left: -25px;
+            top: 40%;
+        }
+
+        .ant-upload-list-picture-card .ant-upload-list-item {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .clock {
+        padding: 10px;
+        position: relative;
+        
+        .join-hook {
+            position: absolute;
+            z-index: 1;
+            height: 50px;
+            top: 120px;
+        }
+
+        .weekly-wage {
+            position: relative;
+            background-color: #4C95ED;
+            padding: 20px 10px;
+            color: #FFFFFF;
+
+            .wage {
+                font-size: 24px;
+            }
+            
+            .remark1 {
+                font-size: 11px;
+                opacity: 0.8;
+            }
+
+            .remark2 {
+                font-size: 11px;
+                opacity: 0.8;
+            }
+
+            .vertical-line {
+                position: absolute;
+                left: 50%;
+                top: 15px;
+                width: 2px;
+                height: 50px; 
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        .clock-calendar {
+            width: 100%;
+            font-size: 11px;
+            .rc-calendar-input-wrap {
+                text-align: center;
+            }
+            .rc-calendar-header {
+                // display: none;
+            }
+            .rc-calendar-body {
+                height: 247px;
+
+                .rc-calendar-today .rc-calendar-date {
+                    border: 0;
+                }
+
+                .rc-calendar-selected-day .rc-calendar-date {
+                    background: none;
+                }
+
+                tr {
+                    border-bottom: 1px solid rgba(230,230,230);
+                    height: 2px;
+                }
+
+                .rc-calendar-cell.rc-calendar-today {
+                    border: 1px solid #3fc7fa;
+                }
+
+                .rc-calendar-cell {
+                    padding: 3px 0 !important;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        top: 0;
+                        right: 4px;
+                    }
+                    .pay-amount {
+                        color: red;
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: -8px;
+                        width: 26px;
+                    }
+                }
+            }
+            .rc-calendar-table {
+                thead {
+                    color: #B3B3B3;
+                    background-color: #E6E6E6;
+                }
+            }
+        }
+    }
+
+    .logout-btn {
+        margin: 0 10px;
+    }
+}
+

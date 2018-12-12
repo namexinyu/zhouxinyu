@@ -1,0 +1,25 @@
+.ivy-sidenav{
+    .list-group{
+        
+    }
+    .list-group-item{
+        border-radius: 0;
+        cursor: pointer;
+        &:hover{
+            background: #3f3f3f;
+        }
+    }
+    .list-group-item-dark{
+        background: #495057;
+        color: #fff;
+    }
+    .list-group-item-secondary{
+        background: rgba(255,255,255,.2);
+        color: #ccc;
+        text-indent: 1em;
+    }
+    .active{
+        border: none;
+        background: #17a2b8;
+    }
+}
